@@ -1,0 +1,85 @@
+.button {
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Hover */
+
+.button:hover:not(:disabled) {
+  transform: translateY(-3px);
+}
+
+/* Click */
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Disabled */
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary */
+
+.primary {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.primary:hover:not(:disabled) {
+  background: #1d4ed8;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.35);
+}
+
+/* Secondary */
+
+.secondary {
+  background: #475569;
+  color: white;
+  box-shadow: 0 8px 20px rgba(71, 85, 105, 0.2);
+}
+
+.secondary:hover:not(:disabled) {
+  background: #334155;
+  box-shadow: 0 12px 24px rgba(71, 85, 105, 0.3);
+}
+
+/* Outline */
+
+.outline {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.outline:hover:not(:disabled) {
+  background: #eff6ff;
+}
+
+/* Sizes */
+
+.small {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.medium {
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.large {
+  padding: 14px 28px;
+  font-size: 17px;
+}
